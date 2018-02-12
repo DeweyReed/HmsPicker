@@ -1,16 +1,16 @@
 # HmsPicker
-A simple Hours-Minutes-Seconds time picker. Available for a custom view or a dialog.
+一个简单的 小时-分钟-秒 的时间选择控件。可用于XML或者Dialog中。
 
-Separated and optimized from [android-betterpickers hmspicker](https://github.com/code-troopers/android-betterpickers)(in order to shrink apk size and add features).
+从[android-betterpickers hmspicker](https://github.com/code-troopers/android-betterpickers)中分离并优化，以缩小APK大小并增加新功能。
 
-## Screenshots
-| Light Theme | Custom Theme | In the XML |
+## 截图
+| 默认主题 | 自定义主题 | XML中 |
 |:-:|:-:|:-:|
-| ![Light Theme](https://github.com/DeweyReed/HmsPicker/blob/master/art/light.png?raw=true) | ![Custom Theme](https://github.com/DeweyReed/HmsPicker/blob/master/art/custom.png?raw=true) | ![In the XML](https://github.com/DeweyReed/HmsPicker/blob/master/art/view.png?raw=true) |
+| ![默认主题](https://github.com/DeweyReed/HmsPicker/blob/master/art/light.png?raw=true) | ![自定义主题](https://github.com/DeweyReed/HmsPicker/blob/master/art/custom.png?raw=true) | ![XML中](https://github.com/DeweyReed/HmsPicker/blob/master/art/view.png?raw=true) |
 
-## Install
+## 安装
 
-## Usage
+## 使用
 ### XML
 ```
 <io.github.deweyreed.hmspicker.HmsPicker
@@ -18,9 +18,9 @@ Separated and optimized from [android-betterpickers hmspicker](https://github.co
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" />
 ```
-Then, use ```hmsPicker.getHours()``` to get users' input.
-### Show a dialog fragment
-Implement ```HmsPickerDialog.HmsPickHandler``` for your activity or whatever.
+用```hmsPicker.getHours()```获取输入。
+### 显示Dialog
+为Activity或其他实现```HmsPickerDialog.HmsPickHandler```。
 ```
 class MainActivity : AppCompatActivity(), HmsPickerDialog.HmsPickHandler {
 ```
@@ -29,7 +29,7 @@ override fun onHmsPick(reference: Int, hours: Int, minutes: Int, seconds: Int) {
     longToast("reference: $reference, hours: $hours, minutes: $minutes, seconds: $seconds")
 }
 ```
-Then, build it.
+Build
 ```
 HmsPickerBuilder(supportFragmentManager, this)
     .setStyleResId(R.style.CustomHmsPickerTheme)
@@ -47,12 +47,12 @@ HmsPickerBuilder(supportFragmentManager, this)
     })
     .show()
 ```
-### Theme
-Default is a light one(```R.style.HmsPickerThemeLight```) and a dark one(```R.style.HmsPickerThemeDark```) is also available.
+### 主题
+默认是亮色主题(```R.style.HmsPickerThemeLight```)还有一个暗色主题(```R.style.HmsPickerThemeDark```)。
 
-You can create your own theme. Example can be found [here](https://github.com/DeweyReed/HmsPicker/blob/master/app/src/main/res/values/styles.xml#L12).
+也可以创建自定义主题，例子[在这](https://github.com/DeweyReed/HmsPicker/blob/master/app/src/main/res/values/styles.xml#L12).
 
-Remember that drawables you use should be selector or ripple.
+别忘了你使用的Drawables应该是selector或者ripple。
 
 ## License
 [Apache License 2.0](https://github.com/code-troopers/android-betterpickers#license) for android-betterpickers.

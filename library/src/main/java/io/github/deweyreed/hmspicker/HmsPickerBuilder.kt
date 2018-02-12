@@ -2,7 +2,6 @@ package io.github.deweyreed.hmspicker
 
 import android.content.DialogInterface
 import android.support.annotation.StyleRes
-import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 
 @Suppress("unused", "MemberVisibilityCanBePrivate")
