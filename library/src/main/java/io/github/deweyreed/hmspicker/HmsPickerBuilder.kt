@@ -4,7 +4,6 @@ import android.content.DialogInterface
 import android.support.annotation.StyleRes
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
-import android.view.View
 
 @Suppress("unused", "MemberVisibilityCanBePrivate")
 /**

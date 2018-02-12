@@ -24,7 +24,7 @@ allprojects {
 
 ext {
     compile_sdk_version = 27
-    min_sdk_version = 21
+    min_sdk_version = 14
     target_sdk_version = 27
 
     support_version = '27.0.2'
