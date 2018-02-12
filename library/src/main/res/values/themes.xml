@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HmsPickerThemeDark">
+        <item name="hms_dialog_background">@drawable/dialog_full_holo_dark</item>
+        <item name="hms_text_color">@color/dialog_text_color_holo_dark</item>
+        <item name="hms_key_background">@drawable/key_background_dark</item>
+        <item name="hms_delete_background">@drawable/button_background_dark</item>
+        <item name="hms_delete_icon">@drawable/ic_backspace_dark</item>
+        <item name="hms_divider_color">@color/default_divider_color_dark</item>
+    </style>
+
+    <style name="HmsPickerThemeLight">
+        <item name="hms_dialog_background">@drawable/dialog_full_holo_light</item>
+        <item name="hms_text_color">@color/dialog_text_color_holo_light</item>
+        <item name="hms_key_background">@drawable/key_background_light</item>
+        <item name="hms_delete_background">@drawable/button_background_light</item>
+        <item name="hms_delete_icon">@drawable/ic_backspace_light</item>
+        <item name="hms_divider_color">@color/default_divider_color_light</item>
+    </style>
+</resources>

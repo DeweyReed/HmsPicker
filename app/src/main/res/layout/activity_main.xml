@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="io.github.deweyreed.hmspicker.sample.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light Theme" />
+
+        <Button
+            android:id="@+id/btnNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Night Theme" />
+
+        <Button
+            android:id="@+id/btnCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Theme" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In the view" />
+
+        <io.github.deweyreed.hmspicker.HmsPicker
+            android:id="@+id/hmsPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>
+

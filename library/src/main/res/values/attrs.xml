@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HmsPicker">
+        <attr name="hms_dialog_background" format="reference" />
+        <attr name="hms_text_color" format="reference" />
+        <attr name="hms_key_background" format="reference" />
+        <attr name="hms_delete_background" format="reference" />
+        <attr name="hms_delete_icon" format="reference" />
+        <attr name="hms_divider_color" format="color" />
+        <attr name="hms_left_text" format="string" />
+        <attr name="hms_right_text" format="string" />
+    </declare-styleable>
+</resources>

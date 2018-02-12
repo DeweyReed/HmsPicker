@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <io.github.deweyreed.hmspicker.HmsView
+            android:id="@+id/hms_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:baselineAligned="false"
+            android:gravity="top"
+            android:paddingBottom="@dimen/medium_font_padding"
+            android:paddingEnd="0dp"
+            android:paddingLeft="@dimen/timer_padding_left"
+            android:paddingRight="0dp"
+            android:paddingStart="@dimen/timer_padding_left"
+            android:paddingTop="@dimen/medium_font_padding">
+
+            <io.github.deweyreed.hmspicker.ZeroTopPaddingTextView
+                android:id="@+id/hours_ones"
+                style="@style/medium_bold_hms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                tools:text="1" />
+
+            <io.github.deweyreed.hmspicker.ZeroTopPaddingTextView
+                android:id="@+id/hours_label"
+                style="@style/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:gravity="top"
+                android:singleLine="true"
+                android:text="@string/hms_picker_hours_label" />
+
+            <io.github.deweyreed.hmspicker.ZeroTopPaddingTextView
+                android:id="@+id/minutes_tens"
+                style="@style/medium_bold_hms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                tools:text="2" />
+
+            <io.github.deweyreed.hmspicker.ZeroTopPaddingTextView
+                android:id="@+id/minutes_ones"
+                style="@style/medium_bold_hms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                tools:text="3" />
+
+            <io.github.deweyreed.hmspicker.ZeroTopPaddingTextView
+                android:id="@+id/minutes_label"
+                style="@style/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:gravity="top"
+                android:singleLine="true"
+                android:text="@string/hms_picker_minutes_label" />
+
+            <io.github.deweyreed.hmspicker.ZeroTopPaddingTextView
+                android:id="@+id/seconds_tens"
+                style="@style/medium_light_hms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                tools:text="4" />
+
+            <io.github.deweyreed.hmspicker.ZeroTopPaddingTextView
+                android:id="@+id/seconds_ones"
+                style="@style/medium_light_hms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                tools:text="5" />
+
+            <io.github.deweyreed.hmspicker.ZeroTopPaddingTextView
+                android:id="@+id/seconds_label"
+                style="@style/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:gravity="top"
+                android:singleLine="true"
+                android:text="@string/hms_picker_seconds_label" />
+        </io.github.deweyreed.hmspicker.HmsView>
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/key_background_dark"
+            android:contentDescription="@string/timer_delete"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_backspace_dark" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_divider_color_dark" />
+
+    <include
+        android:id="@+id/first"
+        layout="@layout/three_keys_view" />
+
+    <include
+        android:id="@+id/second"
+        layout="@layout/three_keys_view" />
+
+    <include
+        android:id="@+id/third"
+        layout="@layout/three_keys_view" />
+
+    <include
+        android:id="@+id/fourth"
+        layout="@layout/three_keys_view" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="timer_delete">Удалить</string>
+    <string name="hms_picker_hours_label">Ч</string>
+    <string name="hms_picker_minutes_label">М</string>
+    <string name="hms_picker_seconds_label">С</string>
+</resources>

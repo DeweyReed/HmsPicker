@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="CustomHmsPickerTheme">
+        <item name="hms_dialog_background">@android:color/holo_red_light</item>
+        <item name="hms_text_color">@android:color/white</item>
+        <item name="hms_key_background">@drawable/custom_key_background</item>
+        <item name="hms_delete_background">@drawable/custom_delete_background</item>
+        <item name="hms_delete_icon">@drawable/ic_custom_backspace</item>
+        <item name="hms_divider_color">@android:color/holo_blue_dark</item>
+    </style>
+
+</resources>

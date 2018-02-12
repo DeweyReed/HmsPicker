@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_font_padding">24dp</dimen>
+    <dimen name="medium_font_size">100dp</dimen>
+    <dimen name="medium_font_size_hms">100dp</dimen>
+    <dimen name="label_font_size">18sp</dimen>
+</resources>
