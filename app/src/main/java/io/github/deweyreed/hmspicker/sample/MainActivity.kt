@@ -19,20 +19,20 @@ class MainActivity : AppCompatActivity(), HmsPickerDialog.HmsPickHandler {
         setContentView(R.layout.activity_main)
 
         btnLight.setOnClickListener {
-            HmsPickerBuilder(supportFragmentManager)
+            HmsPickerBuilder(supportFragmentManager, this)
                     // light is default
 //                    .setStyleResId(R.style.HmsPickerThemeLight)
                     .show()
         }
 
         btnNight.setOnClickListener {
-            HmsPickerBuilder(supportFragmentManager)
+            HmsPickerBuilder(supportFragmentManager, this)
                     .setStyleResId(R.style.HmsPickerThemeDark)
                     .show()
         }
 
         btnCustom.setOnClickListener {
-            HmsPickerBuilder(supportFragmentManager)
+            HmsPickerBuilder(supportFragmentManager, this)
                     .setStyleResId(R.style.CustomHmsPickerTheme)
                     .setReference(255)
                     .setTime(1, 23, 45)

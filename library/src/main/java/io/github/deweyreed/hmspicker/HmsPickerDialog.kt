@@ -32,7 +32,7 @@ class HmsPickerDialog : DialogFragment() {
     var rightText: String = ""
     var rightClickListener: HmsPicker.OnLeftRightClickHandler? = null
     var dismissListener: DialogInterface.OnDismissListener? = null
-    val pickListeners = mutableListOf<HmsPickerDialog.HmsPickHandler>()
+    var pickListener : HmsPickerDialog.HmsPickHandler? = null
 
     private lateinit var hmsPicker: HmsPicker
     private var textColor: ColorStateList? = null
@@ -67,22 +67,8 @@ class HmsPickerDialog : DialogFragment() {
         view.findViewById<Button>(R.id.button_ok).apply {
             setTextColor(textColor)
             setOnClickListener {
-                val h = hmsPicker.hours
-                val m = hmsPicker.minutes
-                val s = hmsPicker.seconds
-
-                pickListeners.forEach {
-                    it.onHmsPick(reference, h, m, s)
-                }
-
-                val activity = activity
-                val fragment = targetFragment
-                if (activity is HmsPickHandler) {
-                    activity.onHmsPick(reference, h, m, s)
-                } else if (fragment is HmsPickHandler) {
-                    fragment.onHmsPick(reference, h, m, s)
-                }
-
+                pickListener?.onHmsPick(reference,
+                        hmsPicker.hours, hmsPicker.minutes, hmsPicker.seconds)
                 dismiss()
             }
         }

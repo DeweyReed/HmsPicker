@@ -10,7 +10,8 @@ import android.support.v4.app.FragmentManager
  * Created on 2018/2/11.
  */
 
-class HmsPickerBuilder(private val fragmentManager: FragmentManager) {
+class HmsPickerBuilder(private val fragmentManager: FragmentManager,
+                       private val pickListener: HmsPickerDialog.HmsPickHandler) {
     private var reference: Int = -1
     @StyleRes
     private var styleResId: Int = R.style.HmsPickerThemeLight
@@ -22,9 +23,6 @@ class HmsPickerBuilder(private val fragmentManager: FragmentManager) {
     private var rightText: String = ""
     private var rightClickListener: HmsPicker.OnLeftRightClickHandler? = null
     private var dismissListener: DialogInterface.OnDismissListener? = null
-    private val pickListeners = mutableListOf<HmsPickerDialog.HmsPickHandler>()
-
-    private var targetFragment: Fragment? = null
 
     fun setReference(r: Int): HmsPickerBuilder = apply { reference = r }
     fun setStyleResId(@StyleRes id: Int): HmsPickerBuilder = apply { styleResId = id }
@@ -60,17 +58,6 @@ class HmsPickerBuilder(private val fragmentManager: FragmentManager) {
         dismissListener = listener
     }
 
-    fun addPickListener(listener: HmsPickerDialog.HmsPickHandler): HmsPickerBuilder = apply {
-        pickListeners.add(listener)
-    }
-
-    /**
-     * See [Fragment.setTargetFragment]
-     */
-    fun setTargetFragment(fragment: Fragment): HmsPickerBuilder = apply {
-        targetFragment = fragment
-    }
-
     fun show() {
         val dialogTag = "hms_dialog"
         fragmentManager.findFragmentByTag(dialogTag)?.let { fragment ->
@@ -90,8 +77,7 @@ class HmsPickerBuilder(private val fragmentManager: FragmentManager) {
             dialog.rightText = rightText
             dialog.rightClickListener = rightClickListener
             dialog.dismissListener = dismissListener
-            dialog.pickListeners.addAll(pickListeners)
-            if (targetFragment != null) dialog.setTargetFragment(targetFragment, 0)
+            dialog.pickListener = pickListener
         }.show(fragmentManager, dialogTag)
     }
 }
