@@ -1,4 +1,5 @@
 # HmsPicker
+[中文文档](https://github.com/DeweyReed/HmsPicker/blob/master/README-ZH.md#hmspicker)
 A simple Hours-Minutes-Seconds time picker. Available for a custom view or a dialog.
 
 Separated and optimized from [android-betterpickers hmspicker](https://github.com/code-troopers/android-betterpickers)(in order to shrink apk size and add features).
@@ -9,7 +10,24 @@ Separated and optimized from [android-betterpickers hmspicker](https://github.co
 | ![Light Theme](https://github.com/DeweyReed/HmsPicker/blob/master/art/light.png?raw=true) | ![Custom Theme](https://github.com/DeweyReed/HmsPicker/blob/master/art/custom.png?raw=true) | ![In the XML](https://github.com/DeweyReed/HmsPicker/blob/master/art/view.png?raw=true) |
 
 ## Install
+Step 1. Add the JitPack repository to your build file
 
+Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+	repositories {
+        ...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+Step 2. Add the dependency
+```
+dependencies {
+	implementation 'com.github.DeweyReed:HmsPicker:1.0.0'
+}
+```
+[![](https://jitpack.io/v/DeweyReed/HmsPicker.svg)](https://jitpack.io/#DeweyReed/HmsPicker)
 ## Usage
 ### XML
 ```

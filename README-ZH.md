@@ -9,7 +9,22 @@
 | ![默认主题](https://github.com/DeweyReed/HmsPicker/blob/master/art/light.png?raw=true) | ![自定义主题](https://github.com/DeweyReed/HmsPicker/blob/master/art/custom.png?raw=true) | ![XML中](https://github.com/DeweyReed/HmsPicker/blob/master/art/view.png?raw=true) |
 
 ## 安装
-
+1. 在根build.gradle添加jitpack.io:
+```
+allprojects {
+	repositories {
+        ...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+2. 
+```
+dependencies {
+	implementation 'com.github.DeweyReed:HmsPicker:1.0.0'
+}
+```
+[![](https://jitpack.io/v/DeweyReed/HmsPicker.svg)](https://jitpack.io/#DeweyReed/HmsPicker)
 ## 使用
 ### XML
 ```
