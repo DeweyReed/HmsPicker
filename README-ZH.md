@@ -30,7 +30,7 @@
 
     ```Groovy
     dependencies {
-        implementation 'com.github.DeweyReed:HmsPicker:1.0.0'
+        implementation 'com.github.DeweyReed:HmsPicker:+'
     }
     ```
 

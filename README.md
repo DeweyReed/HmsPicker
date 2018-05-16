@@ -1,9 +1,8 @@
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-HmsPicker-green.svg?style=flat )]( https://android-arsenal.com/details/1/6764 )
 [![Newest version](https://jitpack.io/v/DeweyReed/HmsPicker.svg)](https://jitpack.io/#DeweyReed/HmsPicker)
+[![Chinese Translation](https://img.shields.io/badge/Translation-%E4%B8%AD%E6%96%87-red.svg)](https://github.com/DeweyReed/HmsPicker/blob/master/README-ZH.md)
 
 # HmsPicker
-
-[中文文档](https://github.com/DeweyReed/HmsPicker/blob/master/README-ZH.md#hmspicker)
 
 A simple Hours-Minutes-Seconds time picker. Available for a custom view or a dialog.
 
@@ -34,7 +33,7 @@ Step 2. Add the dependency => [![Newest version](https://jitpack.io/v/DeweyReed/
 
 ```Groovy
 dependencies {
-    implementation 'com.github.DeweyReed:HmsPicker:1.0.0'
+    implementation 'com.github.DeweyReed:HmsPicker:+'
 }
 ```
 
