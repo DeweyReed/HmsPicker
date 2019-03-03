@@ -2,6 +2,8 @@
 [![Newest version](https://jitpack.io/v/DeweyReed/HmsPicker.svg)](https://jitpack.io/#DeweyReed/HmsPicker)
 [![Chinese Translation](https://img.shields.io/badge/Translation-%E4%B8%AD%E6%96%87-red.svg)](https://github.com/DeweyReed/HmsPicker/blob/master/README-ZH.md)
 
+**This library has been deprecated in favor of [HmsPickerView](https://github.com/DeweyReed/HmsPickerView)**
+
 # HmsPicker
 
 A simple Hours-Minutes-Seconds time picker. Available for a custom view or a dialog.

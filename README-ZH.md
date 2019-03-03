@@ -1,6 +1,9 @@
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-HmsPicker-green.svg?style=flat)]( https://android-arsenal.com/details/1/6764)
 [![Newest Version](https://jitpack.io/v/DeweyReed/HmsPicker.svg)](https://jitpack.io/#DeweyReed/HmsPicker)
 
+**此项目已凉，转而维护[HmsPickerView](https://github.com/DeweyReed/HmsPickerView)**
+
+
 # HmsPicker
 
 一个简单的 小时-分钟-秒 的时间选择控件。可用于XML或者Dialog中。
